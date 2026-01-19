@@ -137,9 +137,9 @@ public class Methods {
 
 	// ESERCIZIO 2.1 - Array 'String' in ordine per LUNGHEZZA DECRESCENTE
 	public static void arrayStringLungDecr(String[] arrayString) {
-		Arrays.(arrayString, (a, b) -> a.length() + b.length());
-		System.out.println("ordine decrescente: " + (Arrays.toString(arrayString)));
+		Arrays.sort(arrayString, (a, b) -> Integer.compare(b.length(), a.length()));
 
+		System.out.println("ordine decrescente: " + Arrays.toString(arrayString));
 	}
 
 	// ESERCIZIO 3 - VERIFICA se una String 's' è PALINDROMA
